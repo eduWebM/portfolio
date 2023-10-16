@@ -1,0 +1,157 @@
+/* Ajustes Generales */
+html{
+    box-sizing: border-box;
+}
+*, *::after, *::before{
+    box-sizing: inherit;
+}
+body{
+    margin: 0;
+}
+h1{
+    font-family: Dosis, serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+h2{
+    margin-bottom: 15px;
+    font-family: Dosis, serif;
+    font-size: 2.2rem;
+    text-decoration: underline;
+}
+h3{
+    margin-bottom: 35px;
+    font-size: 1.3rem;
+}
+section{
+    margin-bottom: 15px;
+}
+footer{
+    min-height: 50px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+}
+i{
+    font-size: 30px;
+    color: #fff;
+}
+p{
+    font-family: Dosis, serif;
+    font-size: 1.4rem;
+}
+.badge{
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+/* Sobre mí */
+.sobre-mi{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+}
+.sobre-mi img{
+    width: 150px;
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.sobre-mi p{
+    max-width: 80%;
+}
+
+/* Desarrollo Web */
+.desarrollo-web{
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}
+.desarrollo-web h2{
+    width: fit-content;
+    margin: 0 auto;
+}
+.contain-web{
+    display: flex;
+    justify-content: space-around;
+    gap: 3rem;
+    flex-wrap: wrap;
+    padding: 1.5rem;
+}
+.contain-web article{
+    width: 300px;
+}
+.contain-web article h3{
+    text-align: center;
+}
+.contain-web article .item{
+    margin-bottom: 15px;
+}
+
+/* Proyectos */
+.proyectos{
+    padding: 1rem;
+    text-align: center;
+}
+.proyectos article{
+    padding: 2rem;
+}
+.logo{
+    border-right: 2px solid #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img{
+    width: 100px;
+    margin-bottom: 10px;
+}
+.grupo img{
+    width: 35px;
+}
+.logo .badge{
+    margin-bottom: 10px;
+}
+.logo .bx{
+    font-size: 3rem;
+    color: #000;
+}
+.descripcion h3{
+    font-family: Lobster, serif;
+    font-size: 1.9rem;
+}
+
+/* Barra de navegación */
+.navbar{
+    padding: 2rem;
+    background-color: #f5f6f7;
+    /* height: 100px; */
+}
+.navbar-collapse{
+    align-items: center;
+    justify-content: space-between;
+}
+.icono{
+    width: 70px;
+}
+
+/* Media Queries */
+@media (max-width: 800px) { /* Móviles */
+    .navbar .icono{
+        display: none;
+    }
+    h1{
+        font-size: 2.6rem;
+    }
+    .logo > img{
+        width: 80px;
+    }
+}
