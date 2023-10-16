@@ -128,6 +128,9 @@ p{
     font-family: Lobster, serif;
     font-size: 1.9rem;
 }
+.botones .btn:first-child{
+    margin-bottom: 10px;
+}
 
 /* Barra de navegación */
 .navbar{
